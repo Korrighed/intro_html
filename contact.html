@@ -1,68 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decouvrez le du HTML</title>
+    <title>Fiche de renseignement</title>
+    <link rel="stylesheet" href="/css/form.css">
 </head>
 
+
 <body>
-    <h1>Les bases du HTML</h1>
-    <p>
-        Le html est le language du programmation lu est interpréter par les navigateur web. <br>
-        Chaque site interne possède forcement du html qui définie sa structure et son contenue <br>
-    </p>
-    <p>
-        Chaque une des ces pages est ensuite hébergé sur un serveur que l'on peut trouvé sur la réseaux. <br>
-        Chaque serveur possède une adresse ip unique, cependant pour des raison de sécurité, on utilise le DNS ou
-        domaine name protocol<br>
-        Ce dernier permet de relier une adresse IP à un nom de domaine: l'url du site.
-    </p>
-    <p>Par exemple, le DNS permet de faire le lien entre l'adresse IP et le nom de domaine correspondant.</p>
-    <p>Il est important d'indenté son code.</p>
-    <br>
-    <p>On peux également utilisé des validateur de html pour vérifiée la qualité du code.</p>
-    <p> En terme de référence on à W3C qui fournit des recommandations et des standards pour le développement web.</p>
-    <p>L'objectif du projet et de crée une page web static de qualité</p>
-    <br>
+    <h1>Fiche de renseignement</h1>
+    <fieldset id="fieldsetVous">
+        <legend>Vous</legend>
+        <form name="Vous">
+            <span>Civilité :
+                <input type="radio" name="Monsieur" value="Monsieur"><label for="Monsieur">Monsieur</label>
+                <input type="radio" name="Monsieur"> <label for="css">Madame</label>
+            </span>
+            <div class="formGroup">
+                <label for="nom">Nom:</label>
+                <input type="text" name="nom" />
+            </div>
+            <div class="formGroup">
+                <label for="prenom">Prénom: </label>
+                <input type="text" name="prenom" />
+            </div>
+            <div class="formGroup">
+                <label for="adresse">Adresse: </label>
+                <input type="text" name="adresse" />
+            </div>
+            <div class="formGroup">
+                <label for="telephone">Téléphone: </label>
+                <input type="text" name="telephone" />
+            </div>
+            <div class="formGroup">
+                <label for="email">Email: </label>
+                <input type="text" name="email" />
+            </div>
+        </form>
+    </fieldset>
+    <fieldset id="fieldsetParent1">
+        <legend>Parent 1</legend>
+        <form name="Parent 1">
+            <div class="formGroup">
+                <label for="nomPrenom">Nom Prénom: </label>
+                <input type="text" name="nomPrenomParent1" />
+            </div>
+            <div class="formGroup">
+                <label for="profession">Profession: </label>
+                <input type="text" name="professionParent1" />
+            </div>
+            <div class="formGroup">
+                <label for="telephone">Téléphone: </label>
+                <input type="text" name="telephoneParent1" />
+            </div>
+        </form>
+    </fieldset>
+    <fieldset id="fieldsetParent2">
+        <legend>Parent 2</legend>
+        <form name="Parent 2">
+            <div class="formGroup">
+                <label for="nomPrenom">Nom Prénom: </label>
+                <input type="text" name="nomPrenomParent2" />
+            </div>
+            <div class="formGroup">
+                <label for="profession">Profession: </label>
+                <input type="text" name="professionParent2" />
+            </div>
+            <div class="formGroup">
+                <label for="telephone">Téléphone: </label>
+                <input type="text" name="telephoneParent2" />
+            </div>
+        </form>
 
-    <p>Avant de commence un page il faut définir et pensé à l'avance la structure les blocks du site a l'avance via des
-        wireframes.</p>
-    <p> Il existe plusieurs site :
-    <ul>
-        <li>
-            <a href="https://www.figma.com/" target="_blank">Figma</a>
-        </li>
-        <li>
-            <a href="https://www.figma.com/" target="_blank">pencil.evolus</a>
-        </li>
-        <li>
-            <a href="https://www.figma.com/" target="_blank">wireframe.cc</a>
-        </li>
-        <li><a href="https://balsamiq.com/product/" target="_blank">Balsamiq</a></li>
-    </ul>
-    </p>
-
-    <p> On peux s'inspirer de sites de références comme web site gallery, CSS nectar ect..</p>
-    <ul>
-        <li> <a href="https://www.webdesign-inspiration.com/" target="_blank">WebDesign Inspiration :</a></li>
-        <li><a href="https://cssnectar.com/" target="_blank">CSS Nectar : </a></li>
-        <li> <a href="https://www.awwwards.com/" target="_blank">Awwwards :</a></li>
-        <li><a href="https://bestwebsite.gallery/" target="_blank">Best Website Gallery :</a></li>
-        <li> <a href="https://www.siteinspire.com/" target="_blank">siteInspire :</a></li>
-    </ul>
-    <h1>Les balises</h1>
-    <p>Une fois l'aspect du ite prévus on commence à strucutré son site via des balises HTML</p>
-    <h2>Les titres</h2>
-    <p> Les titres permettes d'organiser les articles est paragraph h1, h2 ect...On à 5 niveau de profondeure pour les
-        titres.</p>
-    <h2>Mise en forme du text</h2>
-    <p> Il existes plusieurs balise pour mettre en avant le text comme strong (gras), em(italique). Strong et b on la
-        même fonction mais strong est mieux reconnus par les navigateur</p>
-    <p> La balise pre permet de retenir la mise ne page du text</p>
-    <h2>Les listes</h2>
-    <p>Les balise ul et ol permettent des listes non ordonnée ou ordonnée avec des sous ensemble li</p>
+    </fieldset>
 
 </body>
 

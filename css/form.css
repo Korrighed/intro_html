@@ -1,0 +1,90 @@
+h1 {
+    text-align: center;
+}
+
+fieldset {
+    border-style: solid 2px;
+    margin: 10px;
+    padding: 0.1em 0.2em
+}
+
+legend {
+    border: solid 2px;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+    margin: 10px;
+    font-size: 21px;
+}
+
+form span {
+    width: 100%;
+}
+
+form span input {
+    width: 30px;
+    padding: 5px;
+}
+
+.formGroup {
+    display: flex;
+    gap: 0px;
+    align-items: left;
+}
+
+form label {
+    width: 15%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+input[type=text],
+select,
+textarea {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0;
+}
+
+#fieldsetVous {
+    border-color: rgb(251, 7, 7);
+    background-color: rgba(232, 175, 160);
+
+}
+
+#fieldsetVous legend {
+    border-color: rgb(251, 7, 7);
+    background-color: rgb(255, 255, 255);
+    color: rgb(251, 7, 7);
+}
+
+
+#fieldsetParent1 {
+    border-color: #0637fc;
+    background-color: #e1e6fa;
+}
+
+#fieldsetParent1 legend {
+    border-color: #0637fc;
+    background-color: rgb(255, 255, 255);
+    color: #0637fc;
+}
+
+#fieldsetParent2 {
+    border-color: #09d709;
+    background-color: #c4fcca;
+}
+
+#fieldsetParent2 legend {
+    border-color: #09d709;
+    background-color: rgb(255, 255, 255);
+    color: #09d709;
+}
